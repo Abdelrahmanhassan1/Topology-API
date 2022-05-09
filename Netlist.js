@@ -10,18 +10,18 @@ class Netlist {
   }
 }
 
-let n1 = {
-  "t1": "vdd",
-  "t2": "n1"
-}
-let n2 = {
-  "drain": "n1",
-  "gate": "vin",
-  "source": "vss"
-}
+// let n1 = {
+//   "t1": "vdd",
+//   "t2": "n1"
+// }
+// let n2 = {
+//   "drain": "n1",
+//   "gate": "vin",
+//   "source": "vss"
+// }
 
-const net1 = new Netlist(n1);
-const net2 = new Netlist(n2);
+// const net1 = new Netlist(n1);
+// const net2 = new Netlist(n2);
 
-console.log(net1);
-console.log(net2);
+// console.log(net1);
+// console.log(net2);

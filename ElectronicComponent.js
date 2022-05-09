@@ -6,5 +6,5 @@ class ElectricComponent {
   }
 }
 
-let resistance = new ElectricComponent(100, 10, 1000);
-console.log(resistance.Default);
+// let resistance = new ElectricComponent(100, 10, 1000);
+// console.log(resistance.Default);
