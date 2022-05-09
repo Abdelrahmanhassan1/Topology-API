@@ -45,3 +45,8 @@ let netlist = new Netlist({ t1: "vdd", t2: "n1" });
 let topology = new Topology("top1", "resistance", "res1", resistance, netlist);
 // console.log(topology.electricComponent);
 console.log(topology.components);
+
+let n_1 = new ElectricComponent(1.5, 1, 2);
+
+let topology_2 = new Topology("top2", "nmos", "n1", n_1, netlist);
+console.log(topology_2.components.netlistObject.netlist.get("t1"));
