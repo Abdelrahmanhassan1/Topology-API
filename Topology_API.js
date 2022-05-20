@@ -1,7 +1,8 @@
 const fs = require("fs");
-
+const jsonfile = require("jsonfile");
 class Topology_API {
   constructor(filename) {
+    this.filename = filename;
     this.data = JSON.parse(fs.readFileSync(filename, "utf-8"));
     this.devices = [];
     for (let i = 0; i < this.data.length; i++) {
@@ -38,6 +39,8 @@ class Topology_API {
         break;
       }
     }
+    // update the json file
+    jsonfile.writeFile(this.filename, this.data);
     console.log(this.data);
   }
   // show the topologies stored
@@ -47,9 +50,3 @@ class Topology_API {
     }
   }
 }
-
-let topology = new Topology_API("data.json");
-// topology.query_devices("top2");
-// topology.delete_topology("top1");
-topology.query_topologies();
-// topology.query_devices_with_netlist_node("top1", "m1");

@@ -11,6 +11,6 @@
 3. query devices with specific netlist node.
 4. query topologies.
 5. delete topology.
-6. write json.
+6. write in json file.
 
 <hr>

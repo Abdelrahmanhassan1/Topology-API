@@ -35,21 +35,21 @@
     "id": "top2",
     "components": [
       {
-        "type": "resistor",
-        "id": "res1",
+        "type": "capacitor",
+        "id": "cap",
         "resistance": {
-          "default": 100,
-          "min": 10,
-          "max": 1000
+          "default": 200,
+          "min": 30,
+          "max": 2000
         },
         "netlist": {
-          "t1": "vdd",
-          "t2": "n1"
+          "t1": "d",
+          "t2": "l"
         }
       },
       {
-        "type": "nmos",
-        "id": "m1",
+        "type": "pmos",
+        "id": "p2",
         "m(l)": {
           "default": 1.5,
           "min": 1,
