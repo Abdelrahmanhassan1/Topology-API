@@ -14,3 +14,11 @@
 6. write in json file.
 
 <hr>
+
+### To run:
+
+```
+npm install
+```
+
+Then you can run any file
